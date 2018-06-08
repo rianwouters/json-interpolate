@@ -1,3 +1,5 @@
+const moment = require('moment');
+
 const interpolations = {
     "Fn::RandomFloat": ({min, range}) => Math.random() * range + min,
     "Fn::Moment": ({format}) => moment().format(format),

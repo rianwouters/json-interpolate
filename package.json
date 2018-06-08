@@ -11,5 +11,8 @@
   "bugs": {
     "url": "https://github.com/rianwouters/json-interpolate/issues"
   },
-  "homepage": "https://github.com/rianwouters/json-interpolate#readme"
+  "homepage": "https://github.com/rianwouters/json-interpolate#readme",
+  "dependencies": {
+    "moment": "^2.22.2"
+  }
 }
