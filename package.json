@@ -1,0 +1,16 @@
+{
+  "name": "json-interpolate",
+  "version": "1.0.0",
+  "description": "Very simple JSON recursive interpolation function",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rianwouters/json-interpolate.git"
+  },
+  "author": "Rian Wouters",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rianwouters/json-interpolate/issues"
+  },
+  "homepage": "https://github.com/rianwouters/json-interpolate#readme",
+  "dependencies": {},
+}
