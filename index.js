@@ -9,9 +9,9 @@ const interpolations = {
 };
 
 const interpolate = (json, depth) => {
-    if (typeof json === 'object')
+    if (typeof json === 'object' && depth)
         for (const key in json) {
-            if (depth === undefined || depth > 0) json[key] = interpolate(json[key], depth - 1);
+            json[key] = interpolate(json[key], depth - 1);
             const ip = interpolations.get(key);
             if (ip) return ip(json[key]);
         }
