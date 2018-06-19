@@ -8,7 +8,7 @@ const interpolations = {
     get: name => name.startsWith('Fn::') ? interpolations[name] : undefined
 };
 
-const interpolate = (json, depth) => {
+const interpolate = (json, depth = Infinity) => {
     if (typeof json === 'object' && depth)
         for (const key in json) {
             json[key] = interpolate(json[key], depth - 1);
